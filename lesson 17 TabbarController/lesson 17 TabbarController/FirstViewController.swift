@@ -26,6 +26,10 @@ class FirstViewController: UIViewController {
             }
         }
     }
+
+    func printTest() {
+        print("Test")
+    }
      
     
 }
