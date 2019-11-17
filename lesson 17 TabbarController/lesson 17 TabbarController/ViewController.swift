@@ -60,6 +60,9 @@ class ViewController: UIViewController {
         
         present(alertController, animated: true, completion: nil)
     }
+    func test() {
+        print(self)
+    }
     
 }
 
