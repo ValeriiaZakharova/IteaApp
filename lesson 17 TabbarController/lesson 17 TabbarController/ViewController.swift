@@ -50,7 +50,7 @@ class ViewController: UIViewController {
             debugPrint("Third")
         }
         let actionSheetCancel = UIAlertAction(title: "Cancel", style: .cancel) { (_) in
-            debugPrint("Cancel")
+            debugPrint("Nefiga")
         }
         
         alertController.addAction(actionSheetFirst)
