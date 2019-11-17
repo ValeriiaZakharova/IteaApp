@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DYX-hs-cb5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Categories-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CategoriesViewController" id="BYZ-38-t0r" customClass="CategoriesViewController" customModule="tabBarhomeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ODY-XB-5wX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="O0a-og-aSk"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="lxF-U5-PjX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ODY-XB-5wX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z9K-sY-OBk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ODY-XB-5wX" secondAttribute="bottom" id="afH-Ds-xGb"/>
+                            <constraint firstItem="ODY-XB-5wX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="hlv-nB-C9b"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ODY-XB-5wX" secondAttribute="trailing" id="pZF-xB-pyt"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Categories" id="h4D-wT-SYV"/>
+                    <connections>
+                        <outlet property="tableView" destination="ODY-XB-5wX" id="qpB-XA-YLV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="39" y="746"/>
+        </scene>
+        <!--Card-->
+        <scene sceneID="fme-MX-xI4">
+            <objects>
+                <viewController storyboardIdentifier="CardViewController" id="cNM-aW-FFa" customClass="CardViewController" customModule="tabBarhomeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E3o-3T-QkY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="RjD-u6-dhO"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Card" id="deL-ab-9jn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3q4-ne-Kmm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1729" y="746"/>
+        </scene>
+        <!--Fruits-->
+        <scene sceneID="swY-xB-T9k">
+            <objects>
+                <viewController storyboardIdentifier="FruitsViewController" id="gfc-Sa-mSd" customClass="FruitsViewController" customModule="tabBarhomeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4SA-dL-G4S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nDD-Ng-j1g">
+                                <rect key="frame" x="0.0" y="94" width="414" height="719"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="gfc-Sa-mSd" id="W8A-bV-4GL"/>
+                                    <outlet property="delegate" destination="gfc-Sa-mSd" id="mho-Q1-BWm"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;category name&gt;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgy-aa-qLJ">
+                                <rect key="frame" x="10" y="54" width="394" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Z9u-Iz-Mkq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tgy-aa-qLJ" firstAttribute="leading" secondItem="KBD-X0-kEy" secondAttribute="leading" constant="10" id="JVi-bX-UIe"/>
+                            <constraint firstItem="nDD-Ng-j1g" firstAttribute="top" secondItem="tgy-aa-qLJ" secondAttribute="bottom" constant="10" id="L4N-TN-apC"/>
+                            <constraint firstItem="nDD-Ng-j1g" firstAttribute="leading" secondItem="KBD-X0-kEy" secondAttribute="leading" id="M1o-Fw-eCp"/>
+                            <constraint firstItem="KBD-X0-kEy" firstAttribute="trailing" secondItem="nDD-Ng-j1g" secondAttribute="trailing" id="O9L-Lz-vcK"/>
+                            <constraint firstItem="tgy-aa-qLJ" firstAttribute="top" secondItem="KBD-X0-kEy" secondAttribute="top" constant="10" id="RCp-zw-Sfh"/>
+                            <constraint firstItem="KBD-X0-kEy" firstAttribute="bottom" secondItem="nDD-Ng-j1g" secondAttribute="bottom" id="l0S-eO-iGe"/>
+                            <constraint firstItem="KBD-X0-kEy" firstAttribute="trailing" secondItem="tgy-aa-qLJ" secondAttribute="trailing" constant="10" id="qvm-LB-LSY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KBD-X0-kEy"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Fruits" id="YpU-eC-qot"/>
+                    <connections>
+                        <outlet property="categoryNameLabel" destination="tgy-aa-qLJ" id="TDn-aN-uUe"/>
+                        <outlet property="tableView" destination="nDD-Ng-j1g" id="Ucr-Cj-WKR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="inA-4U-eif" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="746"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="z6L-Ek-0mN">
+            <objects>
+                <tabBarController id="DYX-hs-cb5" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="oIq-a0-qYO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="XBo-Bs-wMf"/>
+                        <segue destination="gfc-Sa-mSd" kind="relationship" relationship="viewControllers" id="rSj-IN-IiW"/>
+                        <segue destination="cNM-aW-FFa" kind="relationship" relationship="viewControllers" id="bGX-Xi-tIE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eUb-Ak-B2D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="-13"/>
+        </scene>
+    </scenes>
+</document>
